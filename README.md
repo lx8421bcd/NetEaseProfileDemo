@@ -1,6 +1,6 @@
 # NetEaseProfileDemo  
 仿照网易云音乐歌手资料页面滑动效果实现的Demo.<br>
-A demo which follows NetEase Cloud Music singer profile page.
+A Demo Modeled on sliding effect of NetEase Cloud Music singer profile page.
 ##Features
 ![image](https://github.com/ShonLin/NetEaseProfileDemo/blob/master/picture/demo.gif)
 
