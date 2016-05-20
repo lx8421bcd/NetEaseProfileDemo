@@ -11,10 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <p></p>
- * <p>创建时间: 2016-05-19
  *
- * @author 洛克
+ * @author linxiao
  * @version 1.0.0
  */
 public class RCVListAdapter extends RecyclerView.Adapter<RCVListAdapter.ItemHolder> {

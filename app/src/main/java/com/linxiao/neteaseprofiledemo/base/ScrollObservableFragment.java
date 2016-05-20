@@ -4,10 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 /**
- * <p></p>
- * <p>创建时间: 2016-05-03
  *
- * @author 洛克
+ * @author linxiao
  * @version 1.0.0
  */
 public abstract class ScrollObservableFragment extends BaseFragment {

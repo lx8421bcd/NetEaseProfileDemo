@@ -14,7 +14,7 @@ import com.linxiao.neteaseprofiledemo.R;
  * <p>设置了下拉刷新的主题颜色,修复下拉刷新触发与侧滑的冲突</p>
  * <p>创建时间:2015-12-12</p>
  *
- * @author 洛克
+ * @author linxiao
  * @version 1.0
  */
 public class CusSwipeRefreshLayout extends SwipeRefreshLayout {

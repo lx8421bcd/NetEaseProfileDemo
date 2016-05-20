@@ -7,10 +7,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * <p></p>
- * <p>创建时间: 2016-04-11</p>
+ * 用于设定单列RecyclerView列表的分隔线
  *
- * @author 洛克
+ * @author linxiao
  * @version 1.0
  */
 public class HorizontalDecoration extends RecyclerView.ItemDecoration {

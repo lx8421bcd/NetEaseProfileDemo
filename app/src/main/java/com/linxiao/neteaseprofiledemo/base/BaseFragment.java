@@ -6,10 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.View;
 
 /**
- * <p></p>
- * <p>创建时间: 2016-01-20</p>
  *
- * @author 洛克
+ * @author linxiao
  * @version 1.0
  */
 public abstract class BaseFragment extends Fragment {

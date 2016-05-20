@@ -20,11 +20,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * 首页商品分类列表页面
- * <p></p>
- * <p>创建时间: 2016-05-03
- *
- * @author 洛克
+ * 列表信息展示所用页面
+ * @author linxiao
  * @version 1.0.0
  */
 public class HomeListFragment extends ScrollObservableFragment {

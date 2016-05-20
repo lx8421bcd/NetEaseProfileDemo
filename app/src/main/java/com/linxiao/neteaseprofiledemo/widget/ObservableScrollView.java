@@ -7,9 +7,8 @@ import android.widget.ScrollView;
 /**
  * 设置滚动距离监听的ScrollView
  * <p>通过设置OnScrollChangedListener监听滚动距离</p>
- * <p>创建时间: 2016-04-13</p>
  *
- * @author 洛克
+ * @author linxiao
  * @version 1.0
  */
 public class ObservableScrollView extends ScrollView {

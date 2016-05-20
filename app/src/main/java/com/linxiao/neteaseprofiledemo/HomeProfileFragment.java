@@ -15,11 +15,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * 首页推荐页面
- * <p></p>
- * <p>创建时间: 2016-05-03
+ * 歌手信息展示所用页面
  *
- * @author 洛克
+ * @author linxiao
  * @version 1.0.0
  */
 public class HomeProfileFragment extends ScrollObservableFragment {
