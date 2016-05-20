@@ -14,5 +14,19 @@ This demo based on one of my project, used fragment to show views and used activ
 To avoid the exceptions at Header display that caused by the different scrolling distance in each page when page swithing, we need to reset the current page scrolling distance to current header scrolling distance.<br><br>
 In this demo, I did not use the pull-to-refresh method that NetEase Cloud Music has used, I used SwipRefreshLayout instead, in order to avoid the conflict between swip refresh and scroll up, we need to override onInterceptTouchEvent() at SwipRefreshLayout to judge tigger refresh or not.
 
+## License
+    Copyright (c) 2016 linxiao
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
 
