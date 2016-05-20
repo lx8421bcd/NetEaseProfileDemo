@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 应用字体尺寸表 -->
+    <dimen name="text_micro">11sp</dimen>
+    <dimen name="text_normal">13sp</dimen>
+    <dimen name="text_big">14sp</dimen>
+    <dimen name="title_small">15.4sp</dimen>
+    <dimen name="title_secondary">16.5sp</dimen>
+    <dimen name="title_big">18.15sp</dimen>
+
+    <dimen name="divider_height">1px</dimen>
+
+    <dimen name="search_view_corner_radius">6dp</dimen>
+    <dimen name="nav_icon_length">24dp</dimen>
+
+    <dimen name="settings_vertical_padding">12dp</dimen>
+
+    <dimen name="nav_bar_height">56dp</dimen>
+    <dimen name="nav_start_width">212dp</dimen>
+    <dimen name="llbar_height">58dp</dimen>
+
+    <dimen name="avatar_start_width">72dp</dimen>
+    <dimen name="avatar_end_width">32dp</dimen>
+    <dimen name="avatar_start_marginTop">72dp</dimen>
+    <dimen name="avatar_end_marginTop">12dp</dimen>
+
+    <dimen name="profile_title_width">152dp</dimen>
+    <dimen name="title_start_marginTop">32dp</dimen>
+    <dimen name="title_end_marginLeft">56dp</dimen>
+
+    <dimen name="home_header_size">212dp</dimen>
+    <dimen name="tabstrip_height">40dp</dimen>
+</resources>

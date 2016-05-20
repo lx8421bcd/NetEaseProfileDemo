@@ -1,0 +1,90 @@
+<com.linxiao.neteaseprofiledemo.widget.CusSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srlRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.HomeFragment">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_header_size"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:background="@color/white_gray"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_singer"/>
+
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/tabStrip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tabstrip_height"
+                android:background="@color/white"
+                app:pstsDividerColor="@color/white_gray"
+                app:pstsDividerPadding="12dp"
+                app:pstsDividerWidth="1dp"
+                app:pstsIndicatorColor="@color/red"
+                app:pstsIndicatorHeight="1dp"
+                app:pstsShouldExpand="true"
+                app:pstsTabTextColor="@drawable/sel_hometab_text"
+                app:pstsTabTextSize="@dimen/text_normal"
+                app:pstsUnderlineColor="@color/white_gray_background"
+                app:pstsUnderlineHeight="1px" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/rlNavBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_back"
+                    />
+
+                <TextView
+                    android:layout_toRightOf="@id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="16dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="小野惠令奈(Ono Erena)"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</com.linxiao.neteaseprofiledemo.widget.CusSwipeRefreshLayout>
+
+

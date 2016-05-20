@@ -1,0 +1,84 @@
+<com.linxiao.neteaseprofiledemo.widget.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/osvHomeRecommend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_gray_background"
+    tools:context=".HomeProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_header_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="@color/red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相似歌手"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/text_micro" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="相似歌手列表" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="@color/red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="歌手简介"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/text_micro" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:gravity="left"
+            android:text="小野惠令奈（Ono Erena），1993年11月26日出生于日本东京都，日本歌手、演员。原日本女子偶像团体AKB48 2期生成员[1]  。
+2006年2月26日，小野惠令奈参加AKB48 2期生甄选合格，同年4月1日在公演中首次登台。2006年10月，入选《想见你（会いたかった）》选拔成员。2007年7月，移籍至太田制作事务所。2009年6月24日，个人单曲《FIRST LOVE》作为AKB48第12张单曲《惊喜之泪！（涙サプライズ!）》B面曲发售；7月，在AKB48首届总选举中位列第11位。2010年9月28日，正式从AKB48毕业。2011年签约Lespros事务所。2012年6月，发行首张个人单曲《Erepyon》；同年12月，夺得第54届日本唱片大奖新人奖。2013年4月，主演电视剧《背心战士》首播。6月19日，首张专辑《ERENA》发售。2014年7月，在官方博客中宣布退出娱乐圈[2]  。" />
+
+    </LinearLayout>
+
+</com.linxiao.neteaseprofiledemo.widget.ObservableScrollView>
+
