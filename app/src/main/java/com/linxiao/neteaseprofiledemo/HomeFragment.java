@@ -2,7 +2,6 @@ package com.linxiao.neteaseprofiledemo;
 
 
 import android.graphics.Color;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -32,11 +31,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * 首页
- * <p>负责首页显示逻辑</p>
- * <p>创建时间: 2016-4-21</p>
+ * 首页,管理滑动显示
  *
- * @author 洛克
+ * @author linxiao
  * @version 1.0.0
  */
 public class HomeFragment extends BaseFragment {
@@ -69,8 +66,6 @@ public class HomeFragment extends BaseFragment {
 
     private List<ScrollObservableFragment> displayFragments;
     private List<String> displayPageTitles = Arrays.asList("热门", "专辑", "MV", "歌手信息");
-    private GradientDrawable gd;
-    private float kSearchViewColor;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -174,32 +169,31 @@ public class HomeFragment extends BaseFragment {
         });
     }
 
+    /**
+     * 初始化滑动参数,k值
+     * */
     private void initSlidingParams() {
         int headerSize = getResources().getDimensionPixelOffset(R.dimen.home_header_size);
         int navBarHeight = getResources().getDimensionPixelOffset(R.dimen.nav_bar_height);
         int tabStripHeight = getResources().getDimensionPixelOffset(R.dimen.tabstrip_height);
         slidingDistance = headerSize - navBarHeight - tabStripHeight;
         Log.d("HomeFragment", "slidingDistance" + slidingDistance);
-        gd = new GradientDrawable();
-        gd.setCornerRadius(getResources().getDimensionPixelOffset(R.dimen.search_view_corner_radius));
-        kSearchViewColor = (234 - 255) * 1.0f / slidingDistance;
     }
 
 
-
+    /**
+     * 根据页面滑动距离改变Header方法
+     * */
     private void scrollChangeHeader(int scrolledY) {
         if (scrolledY < 0) {
             scrolledY = 0;
         }
         if (scrolledY < slidingDistance) {
             rlNavBar.setBackgroundColor(Color.argb(scrolledY * 192 / slidingDistance, 0x00, 0x00, 0x00));
-            int rgb = (int) (scrolledY * kSearchViewColor + 255);
-            gd.setColor(Color.argb(0x80, rgb, rgb, rgb));
             llHeader.setPadding(0, -scrolledY, 0, 0);
             currScrollY = scrolledY;
         } else {
             rlNavBar.setBackgroundColor(Color.argb(192, 0x00, 0x00, 0x00));
-            gd.setColor(Color.argb(0x80, 234, 234, 234));
             llHeader.setPadding(0, -slidingDistance, 0, 0);
             currScrollY = slidingDistance;
         }
