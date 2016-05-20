@@ -99,7 +99,7 @@ public class HomeListFragment extends ScrollObservableFragment {
         rcvGoodsList.setAdapter(adapter);
 
         adapter.setDataSource(Arrays.asList("","","","","","","","","","","","","","","","","",
-                "","","","","","","","","","","","","","","","","",""));
+                "","","","",""));
         adapter.notifyDataSetChanged();
 
         rcvGoodsList.setOnScrollListener(new RecyclerView.OnScrollListener() {
