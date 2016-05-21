@@ -3,6 +3,7 @@
 A Demo Modeled on sliding effect of NetEase Cloud Music singer profile page.
 ##Features
 ![image](https://github.com/ShonLin/NetEaseProfileDemo/blob/master/picture/demo.gif)
+在使用网易云音乐时研究此页面，个人认为此页面十分适合作为某些商城应用首页，因此将其模仿出来以供以后使用。
 
 ##Introduction
 基于原项目代码抽出修改而成，使用了Activity中嵌套HomeFragment的布局，在列表页（HomeListFragment）和歌手资料页（HomeProfileFragment）监听其中滑动组件的滑动距离，滑动距离与Header变动距离，颜色变化是一次函数关系，因此在初始化时先根据设定值计算好k值，在HomeFragment中调整对应Header，实现PagerSlidingTabStrip的悬停，顶部NavigationBar变色等效果。<br><br>
