@@ -13,10 +13,10 @@ A Demo Modeled on sliding effect of NetEase Cloud Music singer profile page.
 -----
 This demo based on one of my project, used fragment to show views and used activity to manage fragment.  I set Listeners on the list page and profile page to listen the scroll distance, the relationship between scrolling distance and header view changes can be described by a linear function, so we calculated the k value at initialization, change header according to the scrolling distance to achieve the PagerSlidingTabStrip hover effect and Toolbar color changes.<br><br>
 To avoid the exceptions at Header display that caused by the different scrolling distance in each page when page swithing, we need to reset the current page scrolling distance to current header scrolling distance.<br><br>
-In this demo, I did not use the pull-to-refresh method that NetEase Cloud Music has used, I used SwipRefreshLayout instead, in order to avoid the conflict between swip refresh and scroll up, we need to override onInterceptTouchEvent() at SwipRefreshLayout to judge tigger refresh or not.
+In this demo, I did not use the pull-to-refresh method that NetEase Cloud Music has used, I used SwipeRefreshLayout instead, in order to avoid the conflict between swipe refresh and scroll up, we need to override onInterceptTouchEvent() at SwipRefreshLayout to judge tigger refresh or not.
 
 ## License
-    Copyright (c) 2016 linxiao
+    Copyright 2016 linxiao
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
